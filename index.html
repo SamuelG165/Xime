@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <link rel="icon" href="./icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Para Xime:)</title>
+</head>
+
+<style>
+  /* CSS para hacer el sitio responsivo */
+
+/* Cambios de diseño para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reducir el tamaño del texto para pantallas más pequeñas */
+  }
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%; /* Las imágenes se ajustarán al ancho del contenedor */
+  height: auto; /* Mantener la proporción de aspecto */
+}
+
+</style>
+
+<style>
+  .video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+}
+
+</style>
+
+<body>
+  <section id="inicio" class="video-background">
+    <!-- Contenido de la sección "Inicio" -->
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <h1>De Samuel para, Ximena</h1>
+                <nav id="nav" class="">
+                    <ul id="links">
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">¿Qué es este sitio?</a></li>                           
+                    </ul>
+                </nav>
+
+                <!-- Icono del menu responsive -->
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <div class="presentacion">
+            <p class="bienvenida">Se que puede ser un poco raro esto pero, apenas pude desarrollar este sitio por la escuela...</p>
+            <h2><span></span>¡18 años!</h2>
+            <p class="descripcion">12|04|06 🥳</p>
+            <img src="./ice giso.jpg" style="max-width: 25%; height: auto;">
+        </div>
+    </div>
+    <!-- Video de fondo -->
+    <video autoplay muted loop class="video" id="bgvid">
+        <source src="./stars.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+</section>
+
+
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+
+      <style>
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+    color: white; /* Esto es opcional, solo para hacer el texto más legible sobre el video */
+}
+
+      </style>
+
+<style>
+  .glow-effect {
+    box-shadow: 0 0 80px rgba(255, 192, 203, 0.7); /* Aumenta el valor de desenfoque */
+  }
+</style>
+
+<div class="contenedor-foto">
+  <img src="./cap1.png" alt="" style="width: 190%;" class="glow-effect">
+  <img src="./cap2.png" alt="" style="width: 190%;" class="glow-effect">
+  <figcaption style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.8); padding: 5px;">𝕾é 𝖖𝖚𝖊 𝖓𝖔 𝖓𝖔𝖘 𝖍𝖊𝖒𝖔𝖘 𝖛𝖎𝖘𝖙𝖔 𝖉𝖊𝖘𝖉𝖊 𝖍𝖆𝖈𝖊 𝖒𝖚𝖈𝖍𝖔, 𝖞 𝖖𝖚𝖊 𝖙𝖆𝖒𝖕𝖔𝖈𝖔 𝖍𝖊𝖒𝖔𝖘 𝖍𝖆𝖇𝖑𝖆𝖉𝖔 𝖈𝖔𝖓 𝖋𝖗𝖊𝖈𝖚𝖊𝖓𝖈𝖎𝖆, 𝖘𝖎𝖓 𝖊𝖒𝖇𝖆𝖗𝖌𝖔 𝖘𝖎𝖊𝖒𝖕𝖗𝖊 𝖈𝖔𝖓𝖙𝖆𝖗á𝖘 𝖈𝖔𝖓𝖒𝖎𝖌𝖔:)</figcaption>
+</div>
+
+
+        <div class="sobremi">
+            <p class="titulo-seccion">Tengo que decir que...</p>
+            <h2>Holaa Xime, <span> Primero que nada, buenos días, tardes o noches y segundo, espero que al momento de leer esto esté todo bien!
+            </span> </h2>
+            
+            <p>Pues mira, me surgió está idea de crear una pagina para demostrar un poco que aunque no hablamos mucho, me importas y mucho. Otro poco de contexto, que fue lo de tu cumpleaños recientemente y lamentablemente por la escuela no pude asistir contigo, y la salida fue porque estuve en temporada de evaluación pero de alguna manera buscaré la forma de vernos espero que pronto, creo que no te conté que yo re armé la página de mi CECyT y se me ocurrió hacer algo igual. Donde plasmé como nos conocimos poco a poco hace años
+💌
+            </p>
+            <p>Y pase lo que pase, sea lo que sea, siempre contarás incondicionalmente con mi apoyo en todo
+            </p>
+            <p>Y sobre todo espero que te este yendo bien en todo y de ser así, se que te seguirá yendo super:)
+            </p>
+        </div>
+    </section>
+
+
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+
+    <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #070707;
+                }
+        
+                nav {
+                    background-color: #333;
+                    padding: 10px;
+                    text-align: center;
+                }
+        
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                li {
+                    display: inline;
+                    margin: 0 10px;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: #070707;
+                    font-size: 18px;
+                    font-weight: bold;
+                    transition: color 0.3s;
+                }
+        
+                a:hover {
+                    color: #bafc05; /* Cambiar a color deseado al pasar el ratón */
+                }
+
+                button,button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+  </style>
+
+<style>
+   
+  </style>
+
+</head>
+<body>
+
+    <!-- SECCION-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Galería</h3>
+        <pr>
+
+        </pr>
+        <pr>
+            El día que podamos salir, espero poder colocar alguna que otra foto aquí AJAJAJSQ 👉🏻👈🏻
+        </pr>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="first.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="second.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="third.jpg" alt="">
+                <div class="info">
+                    <h4></h4>
+                   </div>
+            </div>
+        </div>
+        <div class="fila">
+
+    
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+
+    <p>Sitio Desarrollado con ❤️ por Ángel Samuel Reséndiz González</a></p>
+
+
+        <!-- SECCION FOOTER -->
+    <footer>
+        <p>&copy; Todos los derechos reservados - 2024 | A.S.R.G</p>
+
+
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+
+</html>
